@@ -25,6 +25,16 @@ export ARCHION_MCP_URL="https://…/mcp"
 3. Перезапусти терминал (или `source ~/.zshrc`). Токен — личный: не коммитить,
    не пересылать, в репозитории его нет и быть не должно.
 
+**Windows:** вместо шелл-профиля — переменная среды пользователя. В PowerShell:
+
+```powershell
+setx ARCHION_MCP_TOKEN "твой-токен"
+```
+
+затем закрыть и заново открыть терминал (и Claude Code) — `setx` действует только на
+новые окна. Альтернатива без командной строки: Параметры → Система → Переменные
+среды → создать `ARCHION_MCP_TOKEN` для пользователя.
+
 ## Шаг 2. Установка плагина
 
 В терминале:
@@ -39,6 +49,13 @@ claude plugin install archion-search@archion
 разрешение на MCP-сервер плагина — подтверди.
 
 Обновление в будущем: `claude plugin marketplace update archion`.
+
+Команды одинаковы на Mac, Linux и Windows. Нужен установленный git (Claude Code на
+Windows и так требует Git for Windows — если Claude Code запускается, git уже есть).
+Если git всё-таки нет: скачай репозиторий как ZIP
+(https://github.com/shimshon-ai/archion-search → Code → Download ZIP), распакуй и
+подключи папку: `claude plugin marketplace add C:\путь\к\archion-search` — дальше
+те же команды; обновления в этом случае — повторной загрузкой ZIP.
 
 ## Шаг 3. Проверка
 
