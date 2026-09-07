@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "archion": {
+      "type": "http",
+      "url": "${ARCHION_MCP_URL:-https://ai.kabacademy.com/archion-mcp/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${ARCHION_MCP_TOKEN}"
+      }
+    }
+  }
+}

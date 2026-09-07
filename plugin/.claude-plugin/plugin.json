@@ -1,0 +1,17 @@
+{
+  "name": "archion-search",
+  "description": "Поиск по архиву бесед М. Лайтмана (archion_v3, 1.6M чанков). Подключает remote MCP-сервер archion (инструменты search_archive и resolve_unit) и скилл-методику агентной петли поиска: расширение запроса (dense_query + exact_terms), температурная модель языка, переформулировки, поиск на иврите с русскими файлами, фильтры под задачу, отбор и ранжирование фрагментов.",
+  "author": {
+    "name": "Israel Shimshon",
+    "email": "israel@shimshon.ai"
+  },
+  "repository": "https://github.com/shimshon-ai/archion-search",
+  "keywords": [
+    "архив",
+    "поиск",
+    "каббала",
+    "лайтман",
+    "mcp",
+    "qdrant"
+  ]
+}

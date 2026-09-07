@@ -1,0 +1,30 @@
+{
+  "name": "archion",
+  "metadata": {
+    "description": "Поиск по архиву бесед М. Лайтмана (1.6M фрагментов) через remote MCP-сервер archion; доступ по персональному токену"
+  },
+  "owner": {
+    "name": "Israel Shimshon",
+    "email": "israel@shimshon.ai",
+    "url": "https://github.com/shimshon-ai"
+  },
+  "plugins": [
+    {
+      "name": "archion-search",
+      "source": "./plugin",
+      "description": "Агентный поиск по архиву бесед М. Лайтмана: MCP-подключение к серверу archion (search_archive, resolve_unit) + скилл-методика: расширение запроса, температурная модель языка, петля переформулировок, приём ru+he, фильтры под задачу",
+      "author": {
+        "name": "Israel Shimshon"
+      },
+      "category": "search",
+      "tags": [
+        "архив",
+        "поиск",
+        "каббала",
+        "лайтман",
+        "qdrant",
+        "mcp"
+      ]
+    }
+  ]
+}
